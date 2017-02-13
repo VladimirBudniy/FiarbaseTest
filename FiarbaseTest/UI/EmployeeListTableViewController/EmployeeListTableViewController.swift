@@ -113,6 +113,15 @@ class EmployeeListTableViewController: UITableViewController {
         }) { (error) in
             print(error.localizedDescription)
         }
+        
+//        ref.observe(FIRDataEventType.childAdded, with: { (snapshot) in
+//            self.poeple.append(Employee.createFrom(snapshot: snapshot))
+//            self.tableView.reloadData()
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
+        
     }
     
     // MARK: - Navigation
